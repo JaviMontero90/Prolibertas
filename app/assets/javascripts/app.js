@@ -162,6 +162,42 @@
         }
       })
 
+    .state("persona.inventario", {
+      url: "/inventario??alertaCreado&alertaBorrado",
+      views:{
+        menupersona:{
+          templateUrl: "inventario.html"
+        }
+      },
+    })
+
+    .state("persona.articulosNuevo", {
+      url: "/inventario/nuevo",
+      views:{
+        menupersona:{
+        templateUrl: "articulo-nuevo.html"
+        }
+      }
+    })  
+
+    .state("persona.articulo", {
+      url: "/inventario/1",
+      views:{
+        menupersona:{
+          templateUrl: "articulo.html"
+        }
+      }
+    }) 
+
+    .state("persona.articuloEditar", {
+      url: "/inventario/:articulo_id/editar",
+      views:{
+        menupersona:{
+          templateUrl: "articulo-nuevo.html"
+        }
+      }
+    })     
+
      .state("servicios", {
       url: "/servicios?alertaCreado&alertaBorrado",
       templateUrl: "services.html",
