@@ -5,11 +5,13 @@ Rails.application.routes.draw do
   resources :people do
     resources :alerts, only: [:index, :create]
     resources :histories, only: [:index, :create]
+    resources :items, only: [:index, :create]
   end
   resources :services
   resources :used_services
   resources :alerts, only: [:show, :update, :destroy]
   resources :histories, only: [:show, :update, :destroy]
+  resources :items, only: [:show, :update, :destroy]  
 
   get '/current' => 'users#current'
 end
