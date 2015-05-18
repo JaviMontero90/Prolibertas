@@ -161,6 +161,19 @@
         }
       })
 
+
+    .state("persona.serviciosusados", {
+      url: "/serviciosusados",
+      views:{
+        menupersona:{
+          templateUrl: "serviciosusados.html",
+          controller: "UsedServicesController",
+          controllerAs: "usedservicesCtrl"
+        }
+      },
+
+    })
+
      .state("servicios", {
       url: "/servicios?alertaCreado&alertaBorrado",
       templateUrl: "services.html",

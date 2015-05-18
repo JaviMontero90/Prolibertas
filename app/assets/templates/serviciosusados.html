@@ -1,0 +1,33 @@
+<div class="col-md-12">
+  <div class="row__button__create">
+    <a class="btn btn-primary col-md-offset-10 col-md-2 col-sm-offset-9 col-sm-3 col-xs-offset-9 col-xs-3"><span class="glyphicon glyphicon-plus-sign"></span><span class="hidden-xs"> SERVICIO<span>
+    </a>
+  </div>
+
+  <table class="table table-hover table-responsive">
+    <thead class="listpeople__cabecera">
+      <tr>
+        <th>Creador</th>
+        <th>Servicio</th>
+        <th>Fecha</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Fulanito de copas</td>
+        <td>comedor</td>
+        <td>16/11/1990</td>
+        <td>
+          <a><span class="glyphicon glyphicon-eye-open listpeople__azul"></span></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+<div class="alert alert-success leo-message" ng-if="alertsCtrl.alertaCreado">¡Ha creado satisfactoriamente un nuevo servicio!
+</div>
+
+<div class="alert alert-danger leo-message" ng-if="alertsCtrl.alertaBorrado">¡Borrado satisfactoriamente!
+</div>  
