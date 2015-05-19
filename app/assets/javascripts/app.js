@@ -166,13 +166,19 @@
       url: "/serviciosusados",
       views:{
         menupersona:{
-          templateUrl: "serviciosusados.html",
-          controller: "UsedServicesController",
-          controllerAs: "usedservicesCtrl"
+          templateUrl: "serviciosusados.html"
         }
       },
-
     })
+
+    .state("persona.serviciousado", {
+        url: "/serviciosusados/1",
+        views:{
+          menupersona:{
+            templateUrl: "serviciousado.html" 
+          }
+        }
+      })    
 
      .state("servicios", {
       url: "/servicios?alertaCreado&alertaBorrado",
